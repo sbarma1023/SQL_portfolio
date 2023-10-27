@@ -39,6 +39,16 @@ FROM superstore
 WHERE average_rating >= 4.5
 ORDER BY average_rating DESC
 
+### Write a code to list distinct items and price, order by most expensive items
+SELECT DISTINCT(item_name), price
+FROM superstore
+ORDER BY price DESC;
+
+### Write a query to find out the stock of each item order by the most stocked item.
+SELECT DISTINCT(item_name), stock_quantity
+FROM superstore
+ORDER BY stock_quantity DESC;
+
 #### Use a SELECT statement to order the items by price.
 SELECT item_name, price
 FROM superstore
