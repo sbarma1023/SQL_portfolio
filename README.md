@@ -33,22 +33,22 @@ VALUES
 
 
 
-# Write a SQL query listing where items have an average rating greater than 4.5
+### Write a SQL query listing where items have an average rating greater than 4.5
 SELECT item_name, average_rating
 FROM superstore
 WHERE average_rating >= 4.5
 ORDER BY average_rating DESC
 
-# Use a SELECT statement to order the items by price.
+#### Use a SELECT statement to order the items by price.
 SELECT item_name, price
 FROM superstore
 ORDER BY price desc;
 
-# Show a statistic about the item prices.
+### Show a statistic about the item prices.
 SELECT avg(price)
 FROM superstore;
 
-# Show a statistic about the price for items in the category of "Kitchen Supplies". 
+### Show a statistic about the price for items in the category of "Kitchen Supplies". 
 SELECT avg(price)
 FROM superstore
 WHERE category="Kitchen Supplies"
